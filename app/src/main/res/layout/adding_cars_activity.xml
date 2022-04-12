@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="144dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:shadowColor="@color/shadow_color"
+        android:shadowDx="10"
+
+
+        android:shadowDy="10"
+        android:shadowRadius="100"
+
+        android:text="Adding cars"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button5"
+        android:layout_width="240dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/button_shape"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:onClick="Back"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CarColorEditText" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/CarYearEditText"
+        android:layout_width="273dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="68dp"
+
+        android:layout_marginTop="36dp"
+        android:background="@drawable/plain_text_shape"
+
+        android:ems="10"
+
+        android:hint="Year of release"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CarPriceEditText" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/CarNameEditText"
+        android:layout_width="273dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="76dp"
+
+        android:background="@drawable/plain_text_shape"
+        android:ems="10"
+
+        android:hint="Name"
+
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/CarColorEditText"
+        android:layout_width="273dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="68dp"
+
+        android:layout_marginTop="36dp"
+        android:background="@drawable/plain_text_shape"
+
+        android:ems="10"
+
+        android:hint="Color"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CarYearEditText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4"
+        android:layout_width="240dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_shape"
+        android:text="Add car"
+        android:onClick="AddCar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CarColorEditText" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/CarPriceEditText"
+        android:layout_width="273dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="68dp"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/plain_text_shape"
+
+        android:ems="10"
+
+        android:hint="Price"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CarNameEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
